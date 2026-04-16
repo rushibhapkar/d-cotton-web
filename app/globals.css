@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── Font variables — set by next/font in layout.tsx ───── */
+    /* Fallbacks here in case CSS loads before JS hydrates      */
+    --font-sans:    'DM Sans',          system-ui, sans-serif;
+    --font-display: 'Playfair Display', Georgia,   serif;
+
+    /* ── Core Surfaces ─────────────────────────────────────── */
+--background: 40 33% 97%;   /* = #faf7f2 in HSL */
+    --foreground: 20 14.3% 4.1%;
+
+    /* ── Branding — D-Cotton Amber ──────────────────────────── */
+    --primary:            35 92% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    /* ── Subtle Surfaces ────────────────────────────────────── */
+    --card:             0 0% 100%;
+    --card-foreground:  20 14.3% 4.1%;
+    --popover:          0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    /* ── UI Elements ────────────────────────────────────────── */
+    --muted:              20 14.3% 95.9%;
+    --muted-foreground:   25 5.3%  44.7%;
+    --accent:             35 92%   96%;
+    --accent-foreground:  35 92%   33%;
+    --destructive:        0  84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    /* ── Layout ─────────────────────────────────────────────── */
+    --border: 20 5.9% 90%;
+    --input:  20 5.9% 90%;
+    --ring:   35 92%  33%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background:         20 14.3% 4.1%;
+    --foreground:         60 9.1%  97.8%;
+    --card:               20 14.3% 4.1%;
+    --card-foreground:    60 9.1%  97.8%;
+    --popover:            20 14.3% 4.1%;
+    --popover-foreground: 60 9.1%  97.8%;
+    --primary:            35 92%   45%;
+    --primary-foreground: 20 14.3% 4.1%;
+    --muted:              12 6.5%  15.1%;
+    --muted-foreground:   24 5.4%  63.9%;
+    --accent:             12 6.5%  15.1%;
+    --accent-foreground:  60 9.1%  97.8%;
+    --border:             12 6.5%  15.1%;
+    --input:              12 6.5%  15.1%;
+    --ring:               35 92%   45%;
+  }
+}
+
+@layer base {
+  /* ── Prevent horizontal overflow site-wide ─────────────── */
+  /* This is the fix for the left/right margin visual bug.    */
+  /* Any child slightly wider than viewport creates a 17px    */
+  /* scrollbar-width shift that looks like a margin.          */
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  * {
+    @apply border-border selection:bg-primary/20 selection:text-primary;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family:          var(--font-sans);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* ── Font utility classes ───────────────────────────────── */
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  /* ── Glassmorphism ──────────────────────────────────────── */
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  }
+
+  .dark .glass {
+    @apply bg-black/50 backdrop-blur-md border border-white/10;
+  }
+
+  /* ── Keyframes ──────────────────────────────────────────── */
+  @keyframes fade-in-up {
+    0%   { opacity: 0; transform: translateY(20px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0)    scale(1);    }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px);   }
+    50%      { transform: translateY(-10px); }
+  }
+
+  /* ── Animation helper classes ───────────────────────────── */
+  /* These match the Tailwind animation: {} entries in config  */
+  /* so className="animate-fade-in-up" works everywhere        */
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* ── Animation delay helpers ────────────────────────────── */
+  /* Used alongside animate-fade-in-up for staggered reveals   */
+  .animation-delay-100  { animation-delay: 100ms;  }
+  .animation-delay-200  { animation-delay: 200ms;  }
+  .animation-delay-300  { animation-delay: 300ms;  }
+  .animation-delay-400  { animation-delay: 400ms;  }
+  .animation-delay-500  { animation-delay: 500ms;  }
+  .animation-delay-600  { animation-delay: 600ms;  }
+  .animation-delay-700  { animation-delay: 700ms;  }
+  .animation-delay-1000 { animation-delay: 1000ms; }
+
+  /* ── Subtle grid background ─────────────────────────────── */
+  .bg-grid-subtle {
+    background-size:  30px 30px;
+    background-image:
+      linear-gradient(to right,  hsl(var(--border) / 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.3) 1px, transparent 1px);
+  }
+
+  /* ── Radial mask for section fades ─────────────────────── */
+  .mask-radial {
+    mask-image: radial-gradient(circle, black 0%, transparent 80%);
+  }
+}
