@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  output: 'export', // Forces Next.js to build a static HTML/CSS/JS folder
+  images: {
+    unoptimized: true, // Required for static export unless using a third-party loader
   },
-  images: { unoptimized: true },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
