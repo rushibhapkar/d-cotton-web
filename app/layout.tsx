@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: '%s | D-Cotton',
   },
   description: 'Transforming the cotton industry through sustainable investment and innovative opportunities.',
-  metadataBase: new URL('https://d-cotton.com'),
+metadataBase: new URL('https://rushibhapkar.github.io/d-cotton-web'),
   keywords: ['Cotton', 'Investment', 'Sustainability', 'Opportunities'],
   openGraph: {
     type:        'website',

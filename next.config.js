@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Forces Next.js to build a static HTML/CSS/JS folder
+  output: 'export',
   images: {
-    unoptimized: true, // Required for static export unless using a third-party loader
+    unoptimized: true,
   },
+  // CRITICAL: This tells Next.js your site is in a subfolder
+  basePath: '/d-cotton-web',
+  assetPrefix: '/d-cotton-web',
 }
 
 module.exports = nextConfig
