@@ -73,7 +73,7 @@ export default function ApplyForm() {
               <CardHeader>
                 <CardTitle className="text-2xl">Application Form</CardTitle>
                 <CardDescription>
-                  Please provide your details and we'll reach out to you soon
+                  Please provide your details and we&apos;ll reach out to you soon
                 </CardDescription>
               </CardHeader>
               <CardContent>
