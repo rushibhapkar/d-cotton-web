@@ -1,5 +1,5 @@
 import './globals.css';
-import type { Metadata, Viewport } from 'next';
+import type { Metadata } from 'next';
 import { Playfair_Display, DM_Sans } from 'next/font/google';
 
 function cn(...classes: string[]) {
@@ -21,7 +21,7 @@ const dmSans = DM_Sans({
   display:  'swap',
 });
 
-export const viewport: Viewport = {
+export const viewport = {
   themeColor:   '#8B4513',
   width:        'device-width',
   initialScale: 1,
