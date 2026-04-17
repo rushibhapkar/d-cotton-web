@@ -14,7 +14,10 @@ export default function Roadmap() {
         if (entries[0].isIntersecting) {
           roadmapData.steps.forEach((_, index) => {
             setTimeout(() => {
-              setVisibleSteps(prev => [...new Set([...prev, index])]);
+              setVisibleSteps(prev => {
+  if (prev.includes(index)) return prev;
+  return [...prev, index];
+});
             }, index * 200);
           });
         }
