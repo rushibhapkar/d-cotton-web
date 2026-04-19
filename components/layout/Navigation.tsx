@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const navLinks = [
   { label: 'Franchise',  id: 'franchise'  },
@@ -62,14 +63,16 @@ export default function Navigation() {
             className="group flex items-center gap-3 focus:outline-none"
             aria-label="Go to top"
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#8b5a2b]/30 bg-[#8b5a2b]/6 transition-all duration-300 group-hover:bg-[#8b5a2b]/12 group-hover:border-[#8b5a2b]/50">
-              <span
-                className="text-sm font-bold tracking-wider text-[#8b5a2b]"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-              >
-                DK
-              </span>
-            </div>
+<div className="relative h-10 w-10 overflow-hidden rounded-lg transition-all duration-300 group-hover:opacity-85">
+  <Image
+    src="https://res.cloudinary.com/demz8cf5k/image/upload/v1776613533/uploads/k2izcqjkbmd0nynknv9w.jpg"
+    alt="D-KOTTON Logo"
+    fill
+    className="object-contain"
+    unoptimized
+    priority
+  />
+</div>
             <div className="flex flex-col leading-none">
               <span
                 className="text-[17px] font-bold tracking-tight text-[#1a1208] transition-opacity duration-300 group-hover:opacity-70"

@@ -10,65 +10,67 @@ export const heroContent = {
 };
 
 export const franchiseData = {
-  title: "Franchise Opportunity",
-  subtitle: "Build Your Business with D-Cotton",
+  title    : 'Three Ways to Partner With D-KOTTON',
+  subtitle : 'Whether you want your own store, bulk supply, or a shop-in-shop model — we have the right opportunity for you.',
+
   investment: {
-    title: "Investment Overview",
+    title  : 'What Your Investment Covers',
     details: [
       {
-        label: "Total Investment",
-        value: "₹15-25 Lakhs",
-        description: "Complete setup including interiors"
+        label      : 'Shop Setup & Interior',
+        value      : '₹3.50L',
+        description: 'Complete turnkey setup — furniture, AC, lighting, flooring, signboard & branding. All done by our team.',
       },
       {
-        label: "Area Required",
-        value: "800-1200 sq.ft",
-        description: "Prime retail location"
+        label      : 'Security Deposit',
+        value      : '₹7.50L',
+        description: '100% refundable on agreement completion. Stock provided is always worth more than your deposit.',
       },
       {
-        label: "ROI Period",
-        value: "18-24 Months",
-        description: "Based on average performance"
+        label      : 'Franchise Fee',
+        value      : '₹0',
+        description: 'Zero. No entry fee, no royalty, no annual renewal. No hidden charges of any kind.',
       },
       {
-        label: "Franchise Fee",
-        value: "₹3 Lakhs",
-        description: "One-time refundable"
-      }
-    ]
+        label      : 'Total Investment',
+        value      : '₹11L',
+        description: 'Complete ready-to-run branded store. Minimum 300–350 sq.ft commercial space required.',
+      },
+    ],
   },
+
   benefits: [
     {
-      icon: "Store",
-      title: "Brand Recognition",
-      description: "Leverage our established brand presence and customer loyalty across India"
+      icon       : 'Store',
+      title      : 'Complete Store Setup',
+      description: 'Interior design, furniture, AC, electrical, glasswork, signboards — everything handled by D-KOTTON from day one.',
     },
     {
-      icon: "TrendingUp",
-      title: "Marketing Support",
-      description: "Complete digital marketing, advertising campaigns, and brand materials"
+      icon       : 'RefreshCw',
+      title      : 'Stock Exchange Policy',
+      description: 'Non-moving or old stock can be exchanged for fresh collections anytime. No dead inventory risk for you.',
     },
     {
-      icon: "Users",
-      title: "Training & Support",
-      description: "Comprehensive training for you and your staff on operations and sales"
+      icon       : 'Megaphone',
+      title      : 'Marketing & Promotions',
+      description: 'Professional social media marketing and localized discount schemes managed by head office. You focus on selling.',
     },
     {
-      icon: "Package",
-      title: "Inventory Management",
-      description: "Automated stock management system and seasonal collection updates"
+      icon       : 'GraduationCap',
+      title      : 'Training & Audits',
+      description: 'Monthly system audits and full staff training provided. We ensure your store always runs at its best.',
     },
     {
-      icon: "Award",
-      title: "Quality Assurance",
-      description: "Premium quality products with consistent design and material standards"
+      icon       : 'Truck',
+      title      : 'Direct Warehouse Supply',
+      description: 'Factory-to-store supply chain from Swami Textiles. Fresh collections delivered directly — no middlemen.',
     },
     {
-      icon: "LineChart",
-      title: "Growth Potential",
-      description: "High profit margins with proven business model and expansion support"
-    }
-  ]
+      icon       : 'BadgeCheck',
+      title      : 'Zero Hidden Costs',
+      description: 'No GST on franchise setup, no royalty fees, no marketing contributions. What we quote is what you pay.',
+    },
+  ],
 };
 
 export const roadmapData = {

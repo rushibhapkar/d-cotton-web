@@ -378,7 +378,7 @@ export default function Hero() {
                   style={{ aspectRatio: '4/5' }}
                 >
                   <Image
-                    src="https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=987&auto=format&fit=crop"
+                    src="https://res.cloudinary.com/demz8cf5k/image/upload/v1776613535/uploads/myrvvgipb6snhzyjm5xy.jpg"
                     alt="D-KOTTON Premium Men's Fashion"
                     fill
                     priority

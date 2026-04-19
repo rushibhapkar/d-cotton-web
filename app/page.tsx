@@ -10,6 +10,7 @@ import Franchise from '@/components/sections/Franchise';
 import Roadmap from '@/components/sections/Roadmap';
 import Testimonials from '@/components/sections/Testimonials';
 import ApplyForm from '@/components/sections/ApplyForm';
+import WhyDKotton from '@/components/sections/Whydkotton';
 
 export default function Home() {
   return (
@@ -20,11 +21,14 @@ export default function Home() {
       <main>
         {/* Core Sections */}
         <Hero />
-        <Stats />
+        <WhyDKotton />
+
+                <Roadmap />
+
+        {/* <Stats /> */}
         <BusinessModels />
         <Franchise />
-        <Roadmap />
-        <Testimonials />
+        {/* <Testimonials /> */}
 
         {/* Lead Generation / Action Section */}
         <ApplyForm />

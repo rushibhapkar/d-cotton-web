@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  // CRITICAL: This tells Next.js your site is in a subfolder
+  output  : 'export',
+  images  : { unoptimized: true },
   basePath: '/d-cotton-web',
-  assetPrefix: '/d-cotton-web',
+  assetPrefix   : '/d-cotton-web',
+  reactStrictMode: false,   // ✅ fixes browser extension hydration warnings
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
