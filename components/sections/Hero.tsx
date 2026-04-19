@@ -228,7 +228,7 @@ export default function Hero() {
               >
                 <div className="pulse-dot h-2 w-2 rounded-full bg-[#8b5a2b]" />
                 <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[#6b4423]">
-                  Maharashtra's Premier Men's Fashion Brand
+                   Maharashtra&apos;s Premier Men's Fashion Brand
                 </span>
               </div>
 
@@ -239,7 +239,7 @@ export default function Hero() {
               >
                 Build Your Business<br />
                 With{' '}
-                <span className="shimmer-text">Maharashtra's</span>
+                <span className="shimmer-text"> Maharashtra&apos;s</span>
                 <br />
                 Fastest Growing<br />
                 <span className="italic text-[#8b5a2b]">Menswear Brand</span>
@@ -253,7 +253,7 @@ export default function Hero() {
                 D-KOTTON Franchise —{' '}
                 <strong className="font-semibold text-[#3d2314]">Zero Franchise Fee,</strong>{' '}
                 100% Refundable Deposit, Complete Store Setup.
-                Backed by Swami Textiles, Maharashtra's trusted manufacturer.
+                Backed by Swami Textiles,  Maharashtra&apos;s trusted manufacturer.
               </p>
 
               {/* Benefits list */}

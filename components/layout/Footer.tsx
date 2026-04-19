@@ -112,9 +112,9 @@ useEffect(() => { setYear(new Date().getFullYear()); }, []);
           zIndex      : 10,
         }}>
           <p className="ft-marathi">
-            "कापड आणि गुणवत्तेत तडजोड नाही —
-            <br />
-            आम्ही कमीत कमी दरात उत्तम दर्जा देतो."
+            &ldquo;कापड आणि गुणवत्तेत तडजोड नाही —
+<br />
+आम्ही कमीत कमी दरात उत्तम दर्जा देतो.&rdquo;
           </p>
           <p style={{ marginTop: 8, fontSize: 12, color: 'rgba(200,169,110,0.4)', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 600 }}>
             — Swami Textiles, Maharashtra
@@ -155,7 +155,7 @@ useEffect(() => { setYear(new Date().getFullYear()); }, []);
 </div>
 
               <p style={{ fontSize: 13, lineHeight: 1.75, color: 'rgba(250,247,242,0.45)', marginBottom: 20, maxWidth: 240 }}>
-                Maharashtra's fastest growing premium menswear franchise — factory-backed quality, zero franchise fee, complete store setup.
+Maharashtra&apos;s fastest growing...
               </p>
 
               {/* Social icons */}

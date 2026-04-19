@@ -15,7 +15,7 @@ const row1 = [
 
 const row2 = [
   '◆ Backed by Swami Textiles',
-  "◆ Maharashtra's Own Brand",
+  "◆  Maharashtra&apos;s Own Brand",
   '◆ Premium 100% Cotton',
   '◆ Stock Exchange Policy',
   '◆ Full Staff Training',
@@ -178,7 +178,7 @@ export default function WhyDKotton() {
               style={fadeStyle(240)}
             >
               While others charge ₹5–20 Lakh just to use their name, D-KOTTON gives you a
-              complete ready-to-run store — backed by Maharashtra's own Swami Textiles —
+              complete ready-to-run store — backed by  Maharashtra&apos;s own Swami Textiles —
               with{' '}
               <strong className="font-semibold text-[#3d2314]">absolutely zero franchise fee.</strong>
             </p>
